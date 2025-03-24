@@ -1,0 +1,55 @@
+|--- humidity <= 0.25
+|   |--- class: kidneybeans
+|--- humidity >  0.25
+|   |--- Nitrogen Content <= 0.36
+|   |   |--- humidity <= 0.74
+|   |   |   |--- class: lentil
+|   |   |--- humidity >  0.74
+|   |   |   |--- class: grapes
+|   |--- Nitrogen Content >  0.36
+|   |   |--- humidity <= 0.94
+|   |   |   |--- Potassium Content <= 0.06
+|   |   |   |   |--- humidity <= 0.74
+|   |   |   |   |   |--- Phosphorous Content <= 0.21
+|   |   |   |   |   |   |--- class: coffee
+|   |   |   |   |   |--- Phosphorous Content >  0.21
+|   |   |   |   |   |   |--- Nitrogen Content <= 0.74
+|   |   |   |   |   |   |   |--- class: maize
+|   |   |   |   |   |   |--- Nitrogen Content >  0.74
+|   |   |   |   |   |   |   |--- class: coffee
+|   |   |   |   |--- humidity >  0.74
+|   |   |   |   |   |--- class: cotton
+|   |   |   |--- Potassium Content >  0.06
+|   |   |   |   |--- rainfall_Heavy Rain <= 0.50
+|   |   |   |   |   |--- humidity <= 0.68
+|   |   |   |   |   |   |--- class: coffee
+|   |   |   |   |   |--- humidity >  0.68
+|   |   |   |   |   |   |--- humidity <= 0.81
+|   |   |   |   |   |   |   |--- class: jute
+|   |   |   |   |   |   |--- humidity >  0.81
+|   |   |   |   |   |   |   |--- humidity <= 0.87
+|   |   |   |   |   |   |   |   |--- temperature <= 0.45
+|   |   |   |   |   |   |   |   |   |--- temperature <= 0.43
+|   |   |   |   |   |   |   |   |   |   |--- class: rice
+|   |   |   |   |   |   |   |   |   |--- temperature >  0.43
+|   |   |   |   |   |   |   |   |   |   |--- Potassium Content <= 0.15
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 2
+|   |   |   |   |   |   |   |   |   |   |--- Potassium Content >  0.15
+|   |   |   |   |   |   |   |   |   |   |   |--- class: jute
+|   |   |   |   |   |   |   |   |--- temperature >  0.45
+|   |   |   |   |   |   |   |   |   |--- humidity <= 0.85
+|   |   |   |   |   |   |   |   |   |   |--- humidity <= 0.81
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 2
+|   |   |   |   |   |   |   |   |   |   |--- humidity >  0.81
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 9
+|   |   |   |   |   |   |   |   |   |--- humidity >  0.85
+|   |   |   |   |   |   |   |   |   |   |--- ph_Neutral <= 0.50
+|   |   |   |   |   |   |   |   |   |   |   |--- class: rice
+|   |   |   |   |   |   |   |   |   |   |--- ph_Neutral >  0.50
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 3
+|   |   |   |   |   |   |   |--- humidity >  0.87
+|   |   |   |   |   |   |   |   |--- class: jute
+|   |   |   |   |--- rainfall_Heavy Rain >  0.50
+|   |   |   |   |   |--- class: watermelon
+|   |   |--- humidity >  0.94
+|   |   |   |--- class: muskmelon
